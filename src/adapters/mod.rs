@@ -1,9 +1,9 @@
 pub use self::{
     btreemap::ParkingLotRwLockBTreeMapTable, btreemap::StdRwLockBTreeMapTable,
     chashmap::CHashMapTable, contrie::ContrieTable, crossbeam_skiplist::CrossbeamSkipMapTable,
-    dashmap::DashMapTable, evmap::EvmapTable, flurry::FlurryTable, scc::SccMapTable,
-    std::ParkingLotRwLockStdHashMapTable, std::StdRwLockStdHashMapTable,
-    papaya::PapayaTable
+    dashmap::DashMapTable, evmap::EvmapTable, flurry::FlurryTable, papaya::PapayaTable,
+    scc::SccIndexTable, scc::SccMapTable, std::ParkingLotRwLockStdHashMapTable,
+    std::StdRwLockStdHashMapTable,
 };
 
 mod btreemap;
@@ -13,8 +13,8 @@ mod crossbeam_skiplist;
 mod dashmap;
 mod evmap;
 mod flurry;
+mod papaya;
 mod scc;
 mod std;
-mod papaya;
 
 type Value = u32;
