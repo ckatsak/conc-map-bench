@@ -99,8 +99,8 @@ where
 }
 
 fn run(options: &Options, h: &mut Handler) {
-    //case::<StdRwLockBTreeMapTable<u64>>("std:sync::RwLock<BTreeMap>", options, h);
-    //case::<ParkingLotRwLockBTreeMapTable<u64>>("parking_lot::RwLock<BTreeMap>", options, h);
+    case::<StdRwLockBTreeMapTable<u64>>("std:sync::RwLock<BTreeMap>", options, h);
+    case::<ParkingLotRwLockBTreeMapTable<u64>>("parking_lot::RwLock<BTreeMap>", options, h);
     case::<CHashMapTable<u64>>("CHashMap", options, h);
     case::<CrossbeamSkipMapTable<u64>>("CrossbeamSkipMap", options, h);
 
@@ -114,10 +114,10 @@ fn run_hasher_variant<H>(options: &Options, h: &mut Handler)
 where
     H: Default + Clone + Send + Sync + BuildHasher + 'static,
 {
-    //case::<StdRwLockStdHashMapTable<u64, H>>("std::sync::RwLock<StdHashMap>", options, h);
-    //case::<ParkingLotRwLockStdHashMapTable<u64, H>>("parking_lot::RwLock<StdHashMap>", options, h);
+    case::<StdRwLockStdHashMapTable<u64, H>>("std::sync::RwLock<StdHashMap>", options, h);
+    case::<ParkingLotRwLockStdHashMapTable<u64, H>>("parking_lot::RwLock<StdHashMap>", options, h);
     case::<DashMapTable<u64, H>>("DashMap", options, h);
-    case::<FlurryTable<u64, H>>("Flurry", options, h);
+    //case::<FlurryTable<u64, H>>("Flurry", options, h);
     case::<PapayaTable<u64, H>>("Papaya", options, h);
     case::<EvmapTable<u64, H>>("Evmap", options, h);
     case::<ContrieTable<u64, H>>("Contrie", options, h);

@@ -21,7 +21,8 @@ where
             .capacity(capacity)
             .hasher(H::default())
             .collector(
-                papaya::Collector::new()
+                //papaya::Collector::new()
+                ::seize::Collector::new()
                     .epoch_frequency(None)
                     .batch_size(BATCH_SIZE),
             )
