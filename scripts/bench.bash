@@ -33,4 +33,8 @@ bench ReadHeavy ahash
 bench Exchange ahash
 bench RapidGrow ahash
 
+bench ReadHeavy gxhash
+bench Exchange gxhash
+bench RapidGrow gxhash
+
 date

@@ -17,3 +17,6 @@ plot RapidGrow.std
 plot ReadHeavy.ahash
 plot Exchange.ahash
 plot RapidGrow.ahash
+plot ReadHeavy.gxhash
+plot Exchange.gxhash
+plot RapidGrow.gxhash
