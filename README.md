@@ -37,6 +37,16 @@ remove  5%
 update 10%
 ```
 
+### Reads and Updates
+
+TODO
+```
+read   47%
+insert  1%
+remove  1%
+update 47%
+```
+
 ## How to run it?
 
 ```sh
@@ -70,6 +80,11 @@ See the `results/` directory.
 :-------------------------:|:-------------------------:
 ![](results/RapidGrow.std.throughput.svg) | ![](results/RapidGrow.std.latency.svg)
 
+### Reads and Updates (std hasher)
+| | |
+:-------------------------:|:-------------------------:
+![](results/ReadsAndUpdates.std.throughput.svg) | ![](results/ReadsAndUpdates.std.latency.svg)
+
 ### Read Heavy (ahash)
 | | |
 :-------------------------:|:-------------------------:
@@ -84,6 +99,12 @@ See the `results/` directory.
 | | |
 :-------------------------:|:-------------------------:
 ![](results/RapidGrow.ahash.throughput.svg) | ![](results/RapidGrow.ahash.latency.svg)
+
+### Reads and Updates (ahash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/ReadsAndUpdates.ahash.throughput.svg) | ![](results/ReadsAndUpdates.ahash.latency.svg)
+
 ### Read Heavy (gxhash)
 | | |
 :-------------------------:|:-------------------------:
@@ -98,6 +119,12 @@ See the `results/` directory.
 | | |
 :-------------------------:|:-------------------------:
 ![](results/RapidGrow.gxhash.throughput.svg) | ![](results/RapidGrow.gxhash.latency.svg)
+
+### Reads and Updates (gxhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/ReadsAndUpdates.gxhash.throughput.svg) | ![](results/ReadsAndUpdates.gxhash.latency.svg)
+
 ### Read Heavy (foldhash)
 | | |
 :-------------------------:|:-------------------------:
@@ -112,3 +139,8 @@ See the `results/` directory.
 | | |
 :-------------------------:|:-------------------------:
 ![](results/RapidGrow.foldhash.throughput.svg) | ![](results/RapidGrow.foldhash.latency.svg)
+
+### Reads and Updates (foldhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/ReadsAndUpdates.foldhash.throughput.svg) | ![](results/ReadsAndUpdates.foldhash.latency.svg)

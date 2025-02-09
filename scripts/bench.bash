@@ -28,17 +28,21 @@ function bench {
 bench ReadHeavy std
 bench Exchange std
 bench RapidGrow std
+bench ReadsAndUpdates std
 
 bench ReadHeavy ahash
 bench Exchange ahash
 bench RapidGrow ahash
+bench ReadsAndUpdates ahash
 
 bench ReadHeavy gxhash
 bench Exchange gxhash
 bench RapidGrow gxhash
+bench ReadsAndUpdates gxhash
 
 bench ReadHeavy foldhash
 bench Exchange foldhash
 bench RapidGrow foldhash
+bench ReadsAndUpdates foldhash
 
 date

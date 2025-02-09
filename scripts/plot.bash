@@ -14,12 +14,20 @@ function plot {
 plot ReadHeavy.std
 plot Exchange.std
 plot RapidGrow.std
+plot ReadsAndUpdates.std
+
 plot ReadHeavy.ahash
 plot Exchange.ahash
 plot RapidGrow.ahash
+plot ReadsAndUpdates.ahash
+
 plot ReadHeavy.gxhash
 plot Exchange.gxhash
 plot RapidGrow.gxhash
+plot ReadsAndUpdates.gxhash
+
 plot ReadHeavy.foldhash
 plot Exchange.foldhash
 plot RapidGrow.foldhash
+plot ReadsAndUpdates.foldhash
+

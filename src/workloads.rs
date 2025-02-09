@@ -9,6 +9,7 @@ pub enum WorkloadKind {
     ReadHeavy,
     Exchange,
     RapidGrow,
+    ReadsAndUpdates,
 }
 
 impl FromStr for WorkloadKind {
@@ -19,6 +20,7 @@ impl FromStr for WorkloadKind {
             "ReadHeavy" => Ok(Self::ReadHeavy),
             "Exchange" => Ok(Self::Exchange),
             "RapidGrow" => Ok(Self::RapidGrow),
+            "ReadsAndUpdates" => Ok(Self::ReadsAndUpdates),
             _ => Err("unknown workload"),
         }
     }
@@ -66,11 +68,26 @@ fn exchange(threads: u32) -> Workload {
         .prefill_fraction(0.75)
 }
 
+fn reads_and_updates(threads: u32) -> Workload {
+    let mix = Mix {
+        read: 49,
+        insert: 1,
+        remove: 1,
+        update: 49,
+        upsert: 0,
+    };
+
+    *Workload::new(threads as usize, mix)
+        .initial_capacity_log2(25)
+        .prefill_fraction(0.75)
+}
+
 pub(crate) fn create(options: &Options, threads: u32) -> Workload {
     let mut workload = match options.workload {
         WorkloadKind::ReadHeavy => read_heavy(threads),
         WorkloadKind::Exchange => exchange(threads),
         WorkloadKind::RapidGrow => rapid_grow(threads),
+        WorkloadKind::ReadsAndUpdates => reads_and_updates(threads),
     };
 
     workload.operations(options.operations);
