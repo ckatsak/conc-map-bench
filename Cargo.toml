@@ -28,6 +28,7 @@ serde = { version = "1.0.217", features = ["derive"] }
 plotters = "0.3.7"
 scc = "2.3.3"
 gxhash = "3.4.1"
+foldhash = "0.1.4"
 
 [profile.release]
 codegen-units = 1

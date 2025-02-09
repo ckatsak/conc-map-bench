@@ -13,6 +13,7 @@ pub enum HasherKind {
     Std,
     AHash,
     GxHash,
+    FoldHash,
 }
 
 fn parse_hasher_kind(hasher: &str) -> Result<HasherKind, &str> {
@@ -20,7 +21,8 @@ fn parse_hasher_kind(hasher: &str) -> Result<HasherKind, &str> {
         "std" => Ok(HasherKind::Std),
         "ahash" => Ok(HasherKind::AHash),
         "gxhash" => Ok(HasherKind::GxHash),
-        _ => Err("invalid hasher, must be one of {{'std', 'ahash', 'gxhash'}}"),
+        "foldhash" => Ok(HasherKind::FoldHash),
+        _ => Err("invalid hasher, must be one of {{'std', 'ahash', 'gxhash', 'foldhash'}}"),
     }
 }
 
@@ -110,6 +112,7 @@ fn run(options: &Options, h: &mut Handler) {
         HasherKind::Std => run_hasher_variant::<RandomState>(options, h),
         HasherKind::AHash => run_hasher_variant::<ahash::RandomState>(options, h),
         HasherKind::GxHash => run_hasher_variant::<gxhash::GxBuildHasher>(options, h),
+        HasherKind::FoldHash => run_hasher_variant::<foldhash::fast::RandomState>(options, h),
     }
 }
 

@@ -20,3 +20,6 @@ plot RapidGrow.ahash
 plot ReadHeavy.gxhash
 plot Exchange.gxhash
 plot RapidGrow.gxhash
+plot ReadHeavy.foldhash
+plot Exchange.foldhash
+plot RapidGrow.foldhash
