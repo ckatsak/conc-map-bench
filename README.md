@@ -47,9 +47,11 @@ mv results results.bk
 
 ## Results
 
-Machine: Apple M1 Pro (2021 14-inch MacBook Pro)
-
-OS: macOS 14.5
+- Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+  * SMT off
+  * using cores of a single NUMA node
+  * all allocations on that NUMA node
+- Debian trixie (testing)
 
 See the `results/` directory.
 
@@ -82,3 +84,31 @@ See the `results/` directory.
 | | |
 :-------------------------:|:-------------------------:
 ![](results/RapidGrow.ahash.throughput.svg) | ![](results/RapidGrow.ahash.latency.svg)
+### Read Heavy (gxhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/ReadHeavy.gxhash.throughput.svg) | ![](results/ReadHeavy.gxhash.latency.svg)
+
+### Exchange (gxhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/Exchange.gxhash.throughput.svg) | ![](results/Exchange.gxhash.latency.svg)
+
+### Rapid Grow (gxhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/RapidGrow.gxhash.throughput.svg) | ![](results/RapidGrow.gxhash.latency.svg)
+### Read Heavy (foldhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/ReadHeavy.foldhash.throughput.svg) | ![](results/ReadHeavy.foldhash.latency.svg)
+
+### Exchange (foldhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/Exchange.foldhash.throughput.svg) | ![](results/Exchange.foldhash.latency.svg)
+
+### Rapid Grow (foldhash)
+| | |
+:-------------------------:|:-------------------------:
+![](results/RapidGrow.foldhash.throughput.svg) | ![](results/RapidGrow.foldhash.latency.svg)
