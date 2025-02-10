@@ -63,84 +63,84 @@ mv results results.bk
   * all allocations on that NUMA node
 - Debian trixie (testing)
 
-See the `results/` directory.
+See the `results_nosmt/` directory.
 
 ### Read Heavy (std hasher)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadHeavy.std.throughput.svg) | ![](results/ReadHeavy.std.latency.svg)
+![](results_nosmt/ReadHeavy.std.throughput.svg) | ![](results_nosmt/ReadHeavy.std.latency.svg)
 
 ### Exchange (std hasher)
 | | |
 :-------------------------:|:-------------------------:
-![](results/Exchange.std.throughput.svg) | ![](results/Exchange.std.latency.svg)
+![](results_nosmt/Exchange.std.throughput.svg) | ![](results_nosmt/Exchange.std.latency.svg)
 
 ### Rapid Grow (std hasher)
 | | |
 :-------------------------:|:-------------------------:
-![](results/RapidGrow.std.throughput.svg) | ![](results/RapidGrow.std.latency.svg)
+![](results_nosmt/RapidGrow.std.throughput.svg) | ![](results_nosmt/RapidGrow.std.latency.svg)
 
 ### Reads and Updates (std hasher)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadsAndUpdates.std.throughput.svg) | ![](results/ReadsAndUpdates.std.latency.svg)
+![](results_nosmt/ReadsAndUpdates.std.throughput.svg) | ![](results_nosmt/ReadsAndUpdates.std.latency.svg)
 
 ### Read Heavy (ahash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadHeavy.ahash.throughput.svg) | ![](results/ReadHeavy.ahash.latency.svg)
+![](results_nosmt/ReadHeavy.ahash.throughput.svg) | ![](results_nosmt/ReadHeavy.ahash.latency.svg)
 
 ### Exchange (ahash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/Exchange.ahash.throughput.svg) | ![](results/Exchange.ahash.latency.svg)
+![](results_nosmt/Exchange.ahash.throughput.svg) | ![](results_nosmt/Exchange.ahash.latency.svg)
 
 ### Rapid Grow (ahash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/RapidGrow.ahash.throughput.svg) | ![](results/RapidGrow.ahash.latency.svg)
+![](results_nosmt/RapidGrow.ahash.throughput.svg) | ![](results_nosmt/RapidGrow.ahash.latency.svg)
 
 ### Reads and Updates (ahash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadsAndUpdates.ahash.throughput.svg) | ![](results/ReadsAndUpdates.ahash.latency.svg)
+![](results_nosmt/ReadsAndUpdates.ahash.throughput.svg) | ![](results_nosmt/ReadsAndUpdates.ahash.latency.svg)
 
 ### Read Heavy (gxhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadHeavy.gxhash.throughput.svg) | ![](results/ReadHeavy.gxhash.latency.svg)
+![](results_nosmt/ReadHeavy.gxhash.throughput.svg) | ![](results_nosmt/ReadHeavy.gxhash.latency.svg)
 
 ### Exchange (gxhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/Exchange.gxhash.throughput.svg) | ![](results/Exchange.gxhash.latency.svg)
+![](results_nosmt/Exchange.gxhash.throughput.svg) | ![](results_nosmt/Exchange.gxhash.latency.svg)
 
 ### Rapid Grow (gxhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/RapidGrow.gxhash.throughput.svg) | ![](results/RapidGrow.gxhash.latency.svg)
+![](results_nosmt/RapidGrow.gxhash.throughput.svg) | ![](results_nosmt/RapidGrow.gxhash.latency.svg)
 
 ### Reads and Updates (gxhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadsAndUpdates.gxhash.throughput.svg) | ![](results/ReadsAndUpdates.gxhash.latency.svg)
+![](results_nosmt/ReadsAndUpdates.gxhash.throughput.svg) | ![](results_nosmt/ReadsAndUpdates.gxhash.latency.svg)
 
 ### Read Heavy (foldhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadHeavy.foldhash.throughput.svg) | ![](results/ReadHeavy.foldhash.latency.svg)
+![](results_nosmt/ReadHeavy.foldhash.throughput.svg) | ![](results_nosmt/ReadHeavy.foldhash.latency.svg)
 
 ### Exchange (foldhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/Exchange.foldhash.throughput.svg) | ![](results/Exchange.foldhash.latency.svg)
+![](results_nosmt/Exchange.foldhash.throughput.svg) | ![](results_nosmt/Exchange.foldhash.latency.svg)
 
 ### Rapid Grow (foldhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/RapidGrow.foldhash.throughput.svg) | ![](results/RapidGrow.foldhash.latency.svg)
+![](results_nosmt/RapidGrow.foldhash.throughput.svg) | ![](results_nosmt/RapidGrow.foldhash.latency.svg)
 
 ### Reads and Updates (foldhash)
 | | |
 :-------------------------:|:-------------------------:
-![](results/ReadsAndUpdates.foldhash.throughput.svg) | ![](results/ReadsAndUpdates.foldhash.latency.svg)
+![](results_nosmt/ReadsAndUpdates.foldhash.throughput.svg) | ![](results_nosmt/ReadsAndUpdates.foldhash.latency.svg)
